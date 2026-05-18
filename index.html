@@ -1,5 +1,8 @@
-<html>
+<!doctype html>
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OutOfSys Studio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
@@ -21,7 +23,6 @@
           <img src="logo.png" alt="OutOfSys Studio Logo" />
         </a>
       </div>
-
       <div class="header-icons">
         <a href="#" class="icon-link">
           <span class="material-symbols-outlined">search</span>
@@ -29,29 +30,174 @@
         <a href="#" class="icon-link">
           <span class="material-symbols-outlined">shopping_cart</span>
         </a>
-
         <button class="menu-button">
           <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </header>
 
-    <section class="hero-banner">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          <span>SUA</span>
-          <span>PERFORMANCE</span>
-          <span class="highlight-blue">ETERNIZADA</span>
-        </h1>
+    <main>
+      <section class="hero-banner">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span>SUA</span>
+            <span>PERFORMANCE</span>
+            <span class="highlight-blue">ETERNIZADA</span>
+          </h1>
+          <p class="hero-description">
+            Fotografia esportiva de alta performance.<br />
+            Encontre suas fotos de eventos e campeonatos com tecnologia de
+            reconhecimento facial
+          </p>
+          <a href="#" class="hero-button">Encontrar minhas fotos &rarr;</a>
+          <button class="search-button">
+            <span class="material-symbols-outlined">search</span>
+            <span>BUSCAR EVENTO OU LOCAL</span>
+          </button>
+        </div>
+      </section>
 
-        <p class="hero-description">
-          Fotografia esportiva de alta performance.<br />
-          Encontre suas fotos de eventos e campeonatos com tecnologia de
-          reconhecimento facial
+      <section class="albums-section">
+        <div class="section-header">
+          <div class="section-title-group">
+            <h2 class="section-title">ÁLBUNS<br />RECENTES</h2>
+          </div>
+          <a href="#" class="view-all">VER<br />TODOS</a>
+        </div>
+
+        <div class="albums-grid">
+          <article class="album-card">
+            <div class="album-image">
+              <img src="album1.png" alt="São Paulo 2024" />
+            </div>
+            <div class="album-info">
+              <span class="album-tag">CROSSFIT CHAMPIONS</span>
+              <h3 class="album-title">SÃO PAULO 2024</h3>
+              <p class="album-details">15 de Março • 1.240 Fotos</p>
+            </div>
+          </article>
+
+          <article class="album-card">
+            <div class="album-image">
+              <img src="album2.png" alt="Serra Negra" />
+            </div>
+            <div class="album-info">
+              <span class="album-tag">MOUNTAIN BLAST</span>
+              <h3 class="album-title">SERRA NEGRA</h3>
+              <p class="album-details">22 de Abril • 850 Fotos</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <h2 class="section-main-title">COMO FUNCIONA</h2>
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-text">
+              <h3>BUSQUE O EVENTO</h3>
+              <p>
+                Localize sua competição em nossa galeria através da busca por
+                nome ou data.
+              </p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-text">
+              <h3>FILTRO INTELIGENTE</h3>
+              <p>
+                Use o reconhecimento facial ou busque pelo número de peito para
+                encontrar suas fotos instantaneamente.
+              </p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-text">
+              <h3>DOWNLOAD HD</h3>
+              <p>
+                Adquira as fotos em alta resolução e receba o link de download
+                direto no seu e-mail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h2 class="section-main-title">PERGUNTAS FREQUENTES</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span>Como posso encontrar minhas fotos?</span>
+              <span class="material-symbols-outlined">add</span>
+            </h3>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span>Como recebo as fotos que comprar?</span>
+              <span class="material-symbols-outlined">add</span>
+            </h3>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">
+              <span>Qual é o prazo para recebimento das fotos?</span>
+              <span class="material-symbols-outlined">add</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="event-registration">
+        <h2 class="section-main-title">CADASTRE SEU EVENTO</h2>
+        <p class="registration-description">
+          É organizador? Solicite a cobertura fotográfica do seu próximo
+          campeonato.
         </p>
+        <form class="registration-form">
+          <div class="form-group">
+            <label for="event-name">NOME DO EVENTO</label>
+            <input type="text" id="event-name" name="event-name" required />
+          </div>
+          <div class="form-group">
+            <label for="event-date">DATA PREVISTA</label>
+            <input type="date" id="event-date" name="event-date" required />
+          </div>
+          <div class="form-group">
+            <label for="event-email">E-MAIL DE CONTATO</label>
+            <input type="email" id="event-email" name="event-email" required />
+          </div>
+          <button type="submit" class="submit-button">
+            ENVIAR SOLICITAÇÃO
+          </button>
+        </form>
+      </section>
+    </main>
 
-        <a href="#" class="hero-button"> Encontrar minhas fotos &rarr; </a>
+    <footer class="main-footer">
+      <div class="footer-logo-section">
+        <img src="logo.png" alt="OutOfSys Studio Logo" class="footer-logo" />
       </div>
-    </section>
+      <nav class="mobile-nav">
+        <a href="#" class="nav-item">
+          <span class="material-symbols-outlined">home</span>
+          <span>INÍCIO</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="material-symbols-outlined">search</span>
+          <span>EXPLORAR</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="material-symbols-outlined">calendar_month</span>
+          <span>EVENTOS</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="material-symbols-outlined">person</span>
+          <span>PERFIL</span>
+        </a>
+      </nav>
+    </footer>
   </body>
 </html>
