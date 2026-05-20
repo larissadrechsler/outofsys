@@ -7,8 +7,6 @@ Abaixo, descrevo como cada requisito técnico foi resolvido no código:
 1. Estrutura Semântica Rigorosa (Módulo 01)
 O HTML foi construído utilizando exclusivamente tags semânticas para garantir acessibilidade e SEO.
 
-Utilização de <header>, <main>, <section>, <article> e <footer>.
-
 O conteúdo principal é encapsulado em um <main> com um ID de âncora para o Skip Link.
 
 2. Sistema de Design com Variáveis (Módulo 02)
