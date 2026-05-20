@@ -17,9 +17,12 @@
     />
   </head>
   <body>
+    <a href="#main-content" class="skip-link"
+      >Pular para o conteúdo principal</a
+    >
     <header>
       <div class="logo">
-        <a href="#">
+        <a href="#" aria-label="Pesquisar fotos">
           <img src="logo.png" alt="OutOfSys Studio Logo" />
         </a>
       </div>
@@ -30,14 +33,18 @@
         <a href="#" class="icon-link">
           <span class="material-symbols-outlined">shopping_cart</span>
         </a>
-        <button class="menu-button">
+        <button
+          class="menu-button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+        >
           <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </header>
 
     <main>
-      <section class="hero-banner">
+      <section class="hero-banner" aria-labelledby="hero-title">
         <div class="hero-content">
           <h1 class="hero-title">
             <span>SUA</span>
@@ -51,7 +58,7 @@
           </p>
           <a href="#" class="hero-button">Encontrar minhas fotos &rarr;</a>
           <button class="search-button">
-            <span class="material-symbols-outlined">search</span>
+            <span class="material-symbols-outlined light">search</span>
             <span>BUSCAR EVENTO OU LOCAL</span>
           </button>
         </div>
